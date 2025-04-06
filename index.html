@@ -90,6 +90,46 @@
         a:hover {
             text-decoration: underline;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table, th, td {
+            border: 1px solid #00bcd4;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+        }
+        th {
+            background-color: #00bcd4;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        .skill-name {
+            font-weight: bold;
+            padding: 0.5rem;
+            background-color: #00bcd4;
+            color: white;
+            border-radius: 5px;
+        }
+        .skill-value {
+            padding: 0.5rem;
+            color: #333;
+        }
+        .bracketed {
+            font-weight: bold;
+            color: #00bcd4;
+            padding: 0.5rem;
+            font-size: 1.1rem;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 2px solid #00bcd4;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -110,20 +150,60 @@
 
         <section>
             <h2>My Skills</h2>
-            <ul class="tech-list">
-                <li><strong>Cloud Computing Platform</strong> <span>- Amazon Web Services, Microsoft Azure</span></li>
-                <li><strong>CICD/DevOps/IaC</strong> <span>- Jenkins, GitHubAction, Ansible, Docker, Kubernetes, Terraform</span></li>
-                <li><strong>SCM/CM</strong> <span>- GitHub, Bitbucket, Ansible</span></li>
-                <li><strong>Image BuildTool</strong> <span>- Packer</span></li>
-                <li><strong>Middleware</strong> <span>- Apache, Tomcat, IBM WebSphere</span></li>
-                <li><strong>Database</strong> <span>- MySQL, Oracle, Postgres</span></li>
-                <li><strong>Observability</strong> <span>- DataDog, Prometheus/Grafana, Splunk</span></li>
-                <li><strong>Operating System</strong> <span>- Windows, Linux</span></li>
-                <li><strong>Virtualization</strong> <span>- Microsoft Hyper-V, VMware</span></li>
-                <li><strong>Automation Scripting</strong> <span>- Bash, PowerShell</span></li>
-                <li><strong>AWS SDK for Python</strong> <span>- Boto3, Python</span></li>
-                <li><strong>Agile Methodology</strong> <span>- Agile Scrum, JIRA, ITSM</span></li>
-            </ul>
+            <table>
+                <tr>
+                    <th>Skill Category</th>
+                    <th>Skills</th>
+                </tr>
+                <tr>
+                    <td class="skill-name">Cloud Computing Platform</td>
+                    <td class="skill-value"><span class="bracketed">Amazon Web Services</span>, <span class="bracketed">Microsoft Azure</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">CICD/DevOps/IaC</td>
+                    <td class="skill-value"><span class="bracketed">Jenkins</span>, <span class="bracketed">GitHubAction</span>, <span class="bracketed">Ansible</span>, <span class="bracketed">Docker</span>, <span class="bracketed">Kubernetes</span>, <span class="bracketed">Terraform</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">SCM/CM</td>
+                    <td class="skill-value"><span class="bracketed">GitHub</span>, <span class="bracketed">Bitbucket</span>, <span class="bracketed">Ansible</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">Image BuildTool</td>
+                    <td class="skill-value"><span class="bracketed">Packer</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">Middleware</td>
+                    <td class="skill-value"><span class="bracketed">Apache</span>, <span class="bracketed">Tomcat</span>, <span class="bracketed">IBM WebSphere</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">Database</td>
+                    <td class="skill-value"><span class="bracketed">MySQL</span>, <span class="bracketed">Oracle</span>, <span class="bracketed">Postgres</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">Observability</td>
+                    <td class="skill-value"><span class="bracketed">DataDog</span>, <span class="bracketed">Prometheus/Grafana</span>, <span class="bracketed">Splunk</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">Operating System</td>
+                    <td class="skill-value"><span class="bracketed">Windows</span>, <span class="bracketed">Linux</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">Virtualization</td>
+                    <td class="skill-value"><span class="bracketed">Microsoft Hyper-V</span>, <span class="bracketed">VMware</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">Automation Scripting</td>
+                    <td class="skill-value"><span class="bracketed">Bash</span>, <span class="bracketed">PowerShell</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">AWS SDK for Python</td>
+                    <td class="skill-value"><span class="bracketed">Boto3</span>, <span class="bracketed">Python</span></td>
+                </tr>
+                <tr>
+                    <td class="skill-name">Agile Methodology</td>
+                    <td class="skill-value"><span class="bracketed">Agile Scrum</span>, <span class="bracketed">JIRA</span>, <span class="bracketed">ITSM</span></td>
+                </tr>
+            </table>
         </section>
 
         <section>
@@ -132,5 +212,9 @@
             <p>To see my coding and scripting skills, check out my <a href="https://github.com/thangacodes" target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
         </section>
     </main>
+    
+    <footer>
+        <p>&copy; 2025 Thangadurai Murugan</p>
+    </footer>
 </body>
 </html>
