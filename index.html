@@ -6,133 +6,111 @@
     <title>Thangadurai Murugan</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #b3e0ff; /* Light Blue */
-            color: #333;
-        }
-        header {
-            background-color: #e0f7fa; /* Lighter Blue */
-            color: #333;
-            text-align: center;
-            padding: 1rem; /* Reduced padding */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem; /* Reduced font size */
-            font-weight: 500;
-            font-style: italic; /* Roman style */
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px; /* Reduced width */
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-        h2 {
-            color: #333;
-            font-size: 1.75rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        footer a {
-            color: #00bcd4; /* Light Blue */
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .tech-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-        .tech-list li {
-            background-color: #fff;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .tech-list li:hover {
-            transform: translateY(-5px);
-        }
-        .tech-list li strong {
-            color: #00bcd4; /* Light Blue */
-        }
-        .tech-list li span {
-            color: #333; /* Skills in default color */
-        }
-        a {
-            color: #00bcd4; /* Light Blue */
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-        table, th, td {
-            border: 1px solid #b3e0ff; /* Lighter color for table borders */
-        }
-        th, td {
-            padding: 1rem;
-            text-align: left;
-        }
-        th {
-            background-color: #e0f7fa; /* Lighter Blue */
-            color: #333;
-        }
-        td {
-            background-color: #f1f8fc; /* Light background color for table cells */
-        }
-        .skill-name {
-            font-weight: bold;
-            padding: 0.5rem;
-            background-color: #00bcd4;
-            color: white;
-            border-radius: 5px;
-        }
-        .skill-value {
-            padding: 0.5rem;
-            color: #333;
-        }
-        .bracketed {
-            font-weight: bold;
-            font-style: italic; /* Roman font style */
-            color: #00bcd4; /* Blue color */
-            padding: 0.5rem;
-            font-size: 1.1rem;
-            background-color: #fff; /* White background */
-            border-radius: 4px;
-            border: 2px solid #00bcd4; /* Blue border */
-            display: inline-block;
-        }
-    </style>
+        /* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Change the background color of the page */
+    color: #333; /* Change the text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Dark Green for header background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Main Section Styles */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Link and Hover Effects */
+a {
+    color: #007BFF; /* Blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark gray for footer background */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer span {
+    font-weight: bold;
+    color: #FFD700; /* Gold for the try-devOps.xyz text */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #a5d6a7; /* Light Green for table borders */
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #81c784; /* Light Green for table headers */
+    color: white;
+}
+
+td {
+    background-color: #e8f5e9; /* Light Green for table cells */
+}
+
+/* Remove bracketed box styling */
+.skill-name {
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #81c784; /* Light Green for skill name background */
+    color: white;
+    border-radius: 5px;
+}
+
+.skill-value {
+    padding: 0.5rem;
+    color: #388e3c; /* Dark Green for skill values */
+}
+</style>
 </head>
 <body>
 
@@ -144,8 +122,8 @@
         <section>
             <p>Hello there! Thanks for visiting my profile :)</p>
             <p>
-                It is my pleasure to introduce myself as Thangadurai, an Information Technology engineer from Anna University, Tamil Nadu, India. 
-                I am an experienced Cloud DevOps Engineer with a strong background in building and maintaining complete CI/CD pipelines for applications running on AWS, Azure, Docker, Kubernetes, GithubAction, Jenkins, and Terraform.
+                It is my pleasure to introduce myself as Thangadurai, an Information Technology engineer from Anna University, Tamil Nadu, India. I have been working in the IT industry for a decade and have played various roles. 
+                Currently, I am an experienced Cloud DevOps Engineer with a strong background in building and maintaining complete CI/CD pipelines for applications running on AWS, Azure, Docker, Kubernetes, GitHub Actions, Jenkins, and Terraform, Vault.
             </p>
         </section>
 
@@ -158,63 +136,59 @@
                 </tr>
                 <tr>
                     <td class="skill-name">Cloud Computing Platform</td>
-                    <td class="skill-value"><span class="bracketed">Amazon Web Services</span>, <span class="bracketed">Microsoft Azure</span></td>
+                    <td class="skill-value">Amazon Web Services, Microsoft Azure</td>
                 </tr>
                 <tr>
                     <td class="skill-name">CICD/DevOps/IaC</td>
-                    <td class="skill-value"><span class="bracketed">Jenkins</span>, <span class="bracketed">GitHubAction</span>, <span class="bracketed">Ansible</span>, <span class="bracketed">Docker</span>, <span class="bracketed">Kubernetes</span>, <span class="bracketed">Terraform</span></td>
+                    <td class="skill-value">Jenkins, GitHub Actions, Ansible, Docker, Kubernetes, Terraform</td>
                 </tr>
                 <tr>
                     <td class="skill-name">SCM/CM</td>
-                    <td class="skill-value"><span class="bracketed">GitHub</span>, <span class="bracketed">Bitbucket</span>, <span class="bracketed">Ansible</span></td>
+                    <td class="skill-value">GitHub, Bitbucket, Ansible</td>
                 </tr>
                 <tr>
                     <td class="skill-name">Image BuildTool</td>
-                    <td class="skill-value"><span class="bracketed">Packer</span></td>
+                    <td class="skill-value">Packer</td>
                 </tr>
                 <tr>
                     <td class="skill-name">Middleware</td>
-                    <td class="skill-value"><span class="bracketed">Apache</span>, <span class="bracketed">Tomcat</span>, <span class="bracketed">IBM WebSphere</span></td>
+                    <td class="skill-value">Apache, Tomcat, IBM WebSphere</td>
                 </tr>
                 <tr>
                     <td class="skill-name">Database</td>
-                    <td class="skill-value"><span class="bracketed">MySQL</span>, <span class="bracketed">Oracle</span>, <span class="bracketed">Postgres</span></td>
+                    <td class="skill-value">MySQL, Oracle, Postgres</td>
                 </tr>
                 <tr>
                     <td class="skill-name">Observability</td>
-                    <td class="skill-value"><span class="bracketed">DataDog</span>, <span class="bracketed">Prometheus/Grafana</span>, <span class="bracketed">Splunk</span></td>
+                    <td class="skill-value">DataDog, Prometheus/Grafana, Splunk</td>
                 </tr>
                 <tr>
                     <td class="skill-name">Operating System</td>
-                    <td class="skill-value"><span class="bracketed">Windows</span>, <span class="bracketed">Linux</span></td>
+                    <td class="skill-value">Windows, Linux</td>
                 </tr>
                 <tr>
                     <td class="skill-name">Virtualization</td>
-                    <td class="skill-value"><span class="bracketed">Microsoft Hyper-V</span>, <span class="bracketed">VMware</span></td>
+                    <td class="skill-value">Microsoft Hyper-V, VMware</td>
                 </tr>
                 <tr>
                     <td class="skill-name">Automation Scripting</td>
-                    <td class="skill-value"><span class="bracketed">Bash</span>, <span class="bracketed">PowerShell</span></td>
+                    <td class="skill-value">Bash, PowerShell</td>
                 </tr>
                 <tr>
                     <td class="skill-name">AWS SDK for Python</td>
-                    <td class="skill-value"><span class="bracketed">Boto3</span>, <span class="bracketed">Python</span></td>
+                    <td class="skill-value">Boto3, Python</td>
                 </tr>
                 <tr>
                     <td class="skill-name">Agile Methodology</td>
-                    <td class="skill-value"><span class="bracketed">Agile Scrum</span>, <span class="bracketed">JIRA</span>, <span class="bracketed">ITSM</span></td>
+                    <td class="skill-value">Agile Scrum, JIRA, ITSM</td>
                 </tr>
             </table>
-        </section>
+        </section>        
         <section>
             <h3>Connect Me</h3>
             <p>To know more about my experience, please visit my <a href="https://www.linkedin.com/in/thangadurai-murugan-87958556/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
             <p>To see my coding and scripting skills, check out my <a href="https://github.com/thangacodes" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </section>
+        </section>        
     </main>
-    
-    <footer>
-        <p>&copy; 2025 try-devOps.xyz</p>
-    </footer>
 </body>
 </html>
