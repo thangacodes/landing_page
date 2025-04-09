@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap');
+
+body {
+    background: black;
+    color: lime;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    padding: 20px;
+}
+
+.terminal {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border: 2px solid lime;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0 0 10px lime;
+}
+
+.output {
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+.glitch {
+    animation: glitch 0.5s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px red, -2px -2px cyan; }
+    50% { text-shadow: -2px -2px red, 2px 2px cyan; }
+    100% { text-shadow: 4px 4px red, -4px -4px cyan; }
+}
+
+.experience, .skills, .certifications, .projects, .contacts {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+    text-align: left;
+    margin-left: 30%;
+}
+
+.experience li, .skills li, .certifications li, .projects li, .contacts li {
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills li:hover, .experience li:hover, .certifications li:hover, .projects li:hover, .contacts li:hover {
+    transform: scale(1.1);
+    color: yellow;
+}
+
+.projects a, .contacts a {
+    color: lime;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.projects a:hover, .contacts a:hover {
+    color: red;
+}
+
+#deploy-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background: red;
+    border: none;
+    cursor: pointer;
+    animation: shake 0.3s infinite alternate;
+    color: white;
+}
+
+@keyframes shake {
+    0% { transform: translateX(-3px); }
+    100% { transform: translateX(3px); }
+}
+
+#deploy-button:hover {
+    background: lime;
+    color: black;
+    transform: scale(1.2);
+}
