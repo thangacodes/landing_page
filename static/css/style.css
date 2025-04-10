@@ -17,10 +17,10 @@ body {
 .container {
     width: 80%;
     max-width: 1200px;
-    padding: 30px;
+    padding: 20px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -31,28 +31,11 @@ h1, h2, h3 {
 
 .terminal {
     background: #222;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.output {
-    margin: 5px 0;
-}
-
-.glitch {
-    color: #e74c3c;
-    text-shadow: 2px 2px 4px rgba(231, 76, 60, 0.7);
-    animation: glitch-animation 1s infinite alternate;
-}
-
-@keyframes glitch-animation {
-    0% { transform: translateX(2px); }
-    50% { transform: translateX(-2px); }
-    100% { transform: translateX(2px); }
 }
 
 .experience, .skills, .certifications, .projects, .contacts {
@@ -64,42 +47,24 @@ h1, h2, h3 {
 
 .experience li, .skills li, .certifications li, .projects li, .contacts li {
     margin: 10px 0;
-    transition: transform 0.3s ease, color 0.3s;
-}
-
-.skills li:hover, .experience li:hover, .certifications li:hover, .projects li:hover, .contacts li:hover {
-    transform: translateX(10px);
-    color: #3498db;
 }
 
 .projects a, .contacts a {
-    color: #2ecc71;
+    color: #3498db;
     text-decoration: none;
-    transition: color 0.3s;
-}
-
-.projects a:hover, .contacts a:hover {
-    color: #e74c3c;
 }
 
 #deploy-button {
     margin-top: 20px;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 12px 24px;
+    font-size: 1.1em;
     background: #3498db;
     border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
 }
 
 #deploy-button:hover {
     background: #2980b9;
-    transform: translateY(-5px);
-}
-
-#deploy-button:active {
-    background: #2c3e50;
-    transform: translateY(2px);
 }
