@@ -14,7 +14,7 @@ document.getElementById("deploy-button").addEventListener("click", function() {
         setTimeout(() => {
             let newLine = document.createElement("p");
             newLine.classList.add("output");
-            newLine.innerHTML = `root@devops:~$ <span class="glitch">${cmd}</span>`;
+            newLine.innerHTML = `root@td:~$ <span class="glitch">${cmd}</span>`;
             outputContainer.appendChild(newLine);
         }, index * 1000);
     });
