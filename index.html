@@ -65,36 +65,35 @@
             <li>🔗 <a href="https://www.linkedin.com/in/thangadurai-murugan-87958556/" target="_blank">LinkedIn</a></li>
             <li>🐙 <a href="https://github.com/thangacodes/" target="_blank">GitHub</a></li>
         </ul>
-        <button id="deploy-button">🚀 Deploy Now!</button>
-    <!-- Modal for Deploy Button -->
-    <div id="deployModal" class="modal">
+<button id="deploy-button">🚀 Deploy Now!</button>
+
+<div id="deployModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
         <p>🔄 Deploying application... Please stand by.</p>
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="loader"></div>
-        </div>
+        <div class="loader"></div>
     </div>
+</div>
 
-    <script src="script.js"></script>
-    <script>
-        // Modal interaction
-        const modal = document.getElementById("deployModal");
-        const btn = document.getElementById("deploy-button");
-        const span = document.getElementsByClassName("close")[0];
+<script>
+    // Modal interaction
+    const modal = document.getElementById("deployModal");
+    const btn = document.getElementById("deploy-button");
+    const span = document.getElementsByClassName("close")[0];
 
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
 
-        span.onclick = function() {
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
             modal.style.display = "none";
         }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    }
+</script>
 </body>
 </html>
