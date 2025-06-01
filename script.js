@@ -24,9 +24,8 @@ document.getElementById("deploy-button").addEventListener("click", function() {
             if (i >= command.length) {
                 clearInterval(typingInterval);
             }
-        }, 100); // Typing speed (adjust as needed)
+        }, 100);
     }
-
     commands.forEach((cmd, index) => {
         setTimeout(() => {
             typeCommand(cmd, index);
@@ -34,6 +33,6 @@ document.getElementById("deploy-button").addEventListener("click", function() {
     });
 
     setTimeout(() => {
-        window.location.href = "https://www.linkedin.com/in/thangadurai-murugan-87958556/";
-    }, commands.length * 2000 + 2000); // Wait until last command completes
+        window.location.href = "https://www.linkedin.com/in/thangadurai350/";
+    }, commands.length * 2000 + 2000);
 });
