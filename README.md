@@ -1,4 +1,4 @@
-# Thangadurai Portfolio
+# My Portfolio
 
 Personal portfolio website showcasing my experience, skills, certifications, and projects in Cloud Engineering, DevOps, Platform Engineering, and Cloud Native technologies.
 
