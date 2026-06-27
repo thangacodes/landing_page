@@ -44,7 +44,7 @@ landing_page/
 ├── README.md
 │
 └── static/images/
-    └── thangaa.png
+    └── Ai-TDimage.png
 ```
 
 ## Live Demo
